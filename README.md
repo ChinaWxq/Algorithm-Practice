@@ -1,6 +1,9 @@
 # Algorithm-Practice
+
+![](./header.png)
+
 记录算法学习实践的过程。
-编程语言：主要使用C++
+编程语言：主要使用C++.
 
 ## 剑指Offer
 

@@ -69,7 +69,9 @@ public:
             } else if (nums[i] == nums[nums[i]]) {
                 return nums[i];
             } else {
+                int t = nums[nums[i]];
                 nums[nums[i]] = nums[i];
+                nums[i] = t;
             }
         }
         return -1;
