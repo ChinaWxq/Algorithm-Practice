@@ -29,8 +29,8 @@
 
 ## LeetCode
 
-- [441. 排列硬币]()
+- [441. 排列硬币](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/LeetCode/441.%20%E6%8E%92%E5%88%97%E7%A1%AC%E5%B8%81)
 
 ## 牛客
 
-- [万万没想到之聪明的编辑]()
+- [万万没想到之聪明的编辑](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E7%89%9B%E5%AE%A2/%E4%B8%87%E4%B8%87%E6%B2%A1%E6%83%B3%E5%88%B0%E4%B9%8B%E8%81%AA%E6%98%8E%E7%9A%84%E7%BC%96%E8%BE%91)
