@@ -30,22 +30,21 @@
 
 算法背景：
 
-前序遍历递归算法：NLR 先访问根结点N，再遍历左子树L，再遍历右子树R。
+前序遍历：VLR 先访问根结点N，再遍历左子树L，再遍历右子树R。根左右。
 
-中序遍历递归算法：LNR 先访问左子树L，再访问根结点，再遍历右子树R。
+中序遍历：LDR 先访问左子树L，再访问根结点，再遍历右子树R。左根右。
 
 根据前序遍历和中序遍历可以确定二叉树：
 
-前序序列第一个结点确定二叉树的根结点
-根据根结点在中序序列中的位置，前部分为根结点的左子树，后部分分为根结点的右子树。
-再对分割出来的左子树和右子树进行递归分析。
-
-![](./1.png)
+1. 前序序列第一个结点是二叉树的根结点。
+2. 根据根结点在中序序列中的位置，前部分为根结点的左子树，后部分为根结点的右子树。
+3. 再对分割出来的左子树和右子树进行递归分析。
 
 **复杂度分析**
 
-时间复杂度O(nlogn)
-空间复杂度O(logn)
+时间复杂度：O(n)。对于每个结点都有创建过程以及左右子树重建的过程。
+
+空间复杂度：O(n)。存储整棵树的开销。
 
 ```cpp
 /**
@@ -59,32 +58,23 @@
  */
 class Solution {
 public:
+    map<int, int> m; // 存储中序遍历元素对应的位置，优化根结点在中序遍历中的搜索过程。
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        int len = preorder.size();
-        if (len == 0) {
+        for (int i = 0; i < inorder.size(); ++i) {
+            m[inorder[i]] = i;
+        }
+        return rebuild(preorder, 0, 0, inorder.size() - 1);
+    }
+
+    TreeNode* rebuild(vector<int>& preorder, int pre_root, int in_left, int in_right) {
+        if (in_left > in_right) {
             return NULL;
         }
-        // 前序左子树序列，右子树序列。 中序左子树、右子树序列。
-        vector<int> pre_left, pre_right, in_left, in_right;
-        int index = 0;
-        TreeNode *root = new TreeNode(preorder[0]); // 前序序列的第一个结点是有左子树和右子树的根结点（狭义根结点）
-        for (int i = 0; i < len; ++i) {
-            if (inorder[i] == preorder[0]) {
-                index = i; // 找到分割位置
-                break;
-            }
-        }
-        for (int i = 0; i < index; ++i) {
-            pre_left.push_back(preorder[i+1]);
-            in_left.push_back(inorder[i]);
-        }
-        for (int i = index + 1; i < len; ++i) {
-            in_right.push_back(inorder[i]);
-            pre_right.push_back(preorder[i]);
-        }
-        // 递归
-        root->left = buildTree(pre_left, in_left);
-        root->right = buildTree(pre_right, in_right);
+        TreeNode *root = new TreeNode(preorder[pre_root]);
+        int idx = m[root->val];
+        root->left = rebuild(preorder, pre_root+1, in_left, idx-1);
+        // 左子树在前序遍历的边界就是右子树的开始
+        root->right = rebuild(preorder, pre_root+idx-in_left+1, idx+1, in_right);
         return root;
     }
 };
