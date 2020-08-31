@@ -29,6 +29,8 @@
 
 - [12. 矩阵中的路径](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/12.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84)
 
+- [13. 机器人的运动范围](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/13.%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%AC%AC%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4)
+
 ## LeetCode
 
 - [441. 排列硬币](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/LeetCode/441.%20%E6%8E%92%E5%88%97%E7%A1%AC%E5%B8%81)
