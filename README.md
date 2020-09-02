@@ -31,6 +31,10 @@
 
 - [13. 机器人的运动范围](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/13.%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%AC%AC%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4)
 
+- [14. 剪绳子]()
+
+- [14-II. 剪绳子]()
+
 ## LeetCode
 
 - [441. 排列硬币](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/LeetCode/441.%20%E6%8E%92%E5%88%97%E7%A1%AC%E5%B8%81)
