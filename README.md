@@ -31,9 +31,9 @@
 
 - [13. 机器人的运动范围](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/13.%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%AC%AC%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4)
 
-- [14. 剪绳子]()
+- [14. 剪绳子](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/14.%20%E5%89%AA%E7%BB%B3%E5%AD%90)
 
-- [14-II. 剪绳子]()
+- [14-II. 剪绳子](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/14-II.%20%E5%89%AA%E7%BB%B3%E5%AD%90)
 
 ## LeetCode
 
