@@ -35,26 +35,51 @@ n 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。
 
 
 ```cpp
+// 非递归
 class Solution {
 public:
     double myPow(double x, int n) {
-        if (x == 0) {
-            return 0; // 避免 1 / x 错误
-        }
-        long power = n;
-        if (power < 0) { // 如果是负数，底数要变
+        long power = n; // 由于-2的31次方的正数不能存在int类型数据中，需要long
+        if (power < 0) { // 出来指数负数情况
             power = -power;
             x = 1 / x;
         }
         double result = 1.0;
         while (power > 0) {
-            if (power & 1) { // 如果power是奇数
-                result *= x; // 更新result
+            if (power & 1) { // 奇数
+                result *= x;
             }
-            power >>= 1; // power / 2
-            x *= x; // 更新底数
+            x *= x;
+            power >>= 1;
         }
         return result;
     }
 };
+
+// 递归
+class Solution {
+public:
+    double q_Pow(double x, long power) {
+        if (power == 0) {
+            return 1.0;
+        }
+        double ret = q_Pow(x, power / 2);
+        if (power & 1) {
+            return ret * ret * x;
+        } else {
+            return ret * ret;
+        }
+    }
+    double myPow(double x, int n) {
+        long power = n;
+        if (power < 0) {
+            power = -power;
+            x = 1 / x;
+        }
+        return q_Pow(x, power);
+    }
+
+};
+
+// 此时空间复杂度O(logn),递归栈存储ret变量
 ```
