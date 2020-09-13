@@ -39,6 +39,10 @@
 
 - [16. 数值的整数次方](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/16.%20%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9)
 
+- [17. 打印从1到最大的n位数](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/17.%20%E6%89%93%E5%8D%B0%E4%BB%8E1%E5%88%B0%E6%9C%80%E5%A4%A7%E7%9A%84n%E4%BD%8D%E6%95%B0)
+
+- [18. 删除列表的节点](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/18.%20%E5%88%A0%E9%99%A4%E5%88%97%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9)
+
 ## LeetCode
 
 - [441. 排列硬币](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/LeetCode/441.%20%E6%8E%92%E5%88%97%E7%A1%AC%E5%B8%81)
