@@ -43,6 +43,8 @@
 
 - [18. 删除列表的节点](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/18.%20%E5%88%A0%E9%99%A4%E5%88%97%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9)
 
+- [21. 调整数组顺序使奇数位于偶数前面]()
+
 ## LeetCode
 
 - [441. 排列硬币](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/LeetCode/441.%20%E6%8E%92%E5%88%97%E7%A1%AC%E5%B8%81)
