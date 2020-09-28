@@ -43,7 +43,7 @@
 
 - [18. 删除列表的节点](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/18.%20%E5%88%A0%E9%99%A4%E5%88%97%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9)
 
-- [21. 调整数组顺序使奇数位于偶数前面]()
+- [21. 调整数组顺序使奇数位于偶数前面](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E5%89%91%E6%8C%87Offer/21.%20%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2)
 
 ## LeetCode
 
@@ -52,3 +52,9 @@
 ## 牛客
 
 - [万万没想到之聪明的编辑](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E7%89%9B%E5%AE%A2/%E4%B8%87%E4%B8%87%E6%B2%A1%E6%83%B3%E5%88%B0%E4%B9%8B%E8%81%AA%E6%98%8E%E7%9A%84%E7%BC%96%E8%BE%91)
+
+## 排序算法
+
+- [插入排序]()
+
+- [冒泡排序]()
