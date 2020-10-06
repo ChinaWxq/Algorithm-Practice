@@ -58,9 +58,9 @@ public:
 
 ### 反转链表
 
-设置两个辅助指针将原链表反转存入vector。
-cur为当前结点指针，next为下一个结点指针，pre为上一个结点指针
+使用两个辅助指针将原链表反转存入vector。
 
+cur为当前结点指针，next为下一个结点指针，pre为上一个结点指针
 
 ```cpp
 /**
@@ -76,11 +76,12 @@ public:
     vector<int> reversePrint(ListNode* head) {
         vector<int> ans;
         ListNode *pre = NULL, *cur = head, *next = NULL;
+        // 每一次改变cur的next指针。
         while (cur != NULL) {
-            next = cur->next;
-            cur->next = pre;
-            pre = cur;
-            cur = next;
+            next = cur->next; // 保存cur的next指针
+            cur->next = pre; // 改变cur的next指针
+            pre = cur; // 更新pre
+            cur = next; // 更新cur
         }
         while (pre != NULL) {
             ans.push_back(pre->val);

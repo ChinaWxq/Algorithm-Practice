@@ -36,15 +36,16 @@
 
 根据前序遍历和中序遍历可以确定二叉树：
 
-1. 前序序列第一个结点是二叉树的根结点。
-2. 根据根结点在中序序列中的位置，前部分为根结点的左子树，后部分为根结点的右子树。
-3. 再对分割出来的左子树和右子树进行递归分析。
+1. 前序遍历首个元素是根结点root的值。
+2. 根据根结点在中序遍历中的位置，前部分为根结点的左子树，后部分为根结点的右子树。
+3. 根据中序遍历中左右子树的结点数量，将前序遍历分为左右子树。
+4. 递归分析左右子树。
 
 **复杂度分析**
 
-时间复杂度：O(n)。对于每个结点都有创建过程以及左右子树重建的过程。
+时间复杂度：O(n)。n为结点数量。初始化哈希map需要遍历inorder，占用O(n)；递归建立n个结点，递归占用O(n)（最差情况下所有子树只有左结点，树退化为链表，递归深度为O(n)，平均情况下递归深度为O(log<sub>2</sub>n)）。
 
-空间复杂度：O(n)。存储整棵树的开销。
+空间复杂度：O(n)。哈希map使用O(n)空间，递归使用系统O(n)空间。
 
 ```cpp
 /**
@@ -65,15 +66,22 @@ public:
         }
         return rebuild(preorder, 0, 0, inorder.size() - 1);
     }
-
+    /*
+        @param pre_root 前序遍历子树的根索引
+        @param in_left 中序遍历左边界 
+        @param in_right 中序遍历右边界
+    */
     TreeNode* rebuild(vector<int>& preorder, int pre_root, int in_left, int in_right) {
         if (in_left > in_right) {
             return NULL;
         }
         TreeNode *root = new TreeNode(preorder[pre_root]);
         int idx = m[root->val];
+        // 左子树的根结点索引在前序遍历中的位置是，根结点索引下一个位置。
+        // 中序遍历的左边界in_left，右边界是idx-1。
         root->left = rebuild(preorder, pre_root+1, in_left, idx-1);
-        // 左子树在前序遍历的边界就是右子树的开始
+        // 右子树的根结点索引在前序遍历中的位置是，根结点索引+左子树数量+1。左子树数量为idx - in_left
+        // 中序遍历左边界idx+1，右边界in_right。
         root->right = rebuild(preorder, pre_root+idx-in_left+1, idx+1, in_right);
         return root;
     }
