@@ -57,4 +57,14 @@
 
 - [插入排序](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
 
-- [冒泡排序](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F
+- [冒泡排序](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)
+
+## 二分
+
+- [POJ-2456]()
+
+- [HDU-1969]()
+
+- [HDU-4190]()
+
+- [远亲不如近邻]()
