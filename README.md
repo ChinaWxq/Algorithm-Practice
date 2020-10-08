@@ -61,10 +61,10 @@
 
 ## 二分
 
-- [POJ-2456]()
+- [POJ-2456](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E4%BA%8C%E5%88%86/POJ-2456)
 
-- [HDU-1969]()
+- [HDU-1969](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E4%BA%8C%E5%88%86/HDU-1969)
 
-- [HDU-4190]()
+- [HDU-4190](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E4%BA%8C%E5%88%86/HDU-4190)
 
-- [远亲不如近邻]()
+- [远亲不如近邻](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E4%BA%8C%E5%88%86/%E8%BF%9C%E4%BA%B2%E4%B8%8D%E5%A6%82%E8%BF%91%E9%82%BB)
