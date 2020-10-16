@@ -71,8 +71,10 @@
 
 ## 暴力求解法
 
-- [枚举排列]()
+- [枚举排列](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E6%9A%B4%E5%8A%9B%E6%B1%82%E8%A7%A3%E6%B3%95/%E6%9E%9A%E4%B8%BE%E6%8E%92%E5%88%97)
 
-- [子集生成]()
+- [子集生成](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E6%9A%B4%E5%8A%9B%E6%B1%82%E8%A7%A3%E6%B3%95/%E5%AD%90%E9%9B%86%E7%94%9F%E6%88%90)
 
-- [回溯法]()
+- [回溯法](https://github.com/ChinaWxq/Algorithm-Practice/tree/master/%E6%9A%B4%E5%8A%9B%E6%B1%82%E8%A7%A3%E6%B3%95/%E5%9B%9E%E6%BA%AF%E6%B3%95)
+
+    - [UVa-524]()
